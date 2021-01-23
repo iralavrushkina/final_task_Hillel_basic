@@ -60,9 +60,13 @@ table {
 }
 /* general style*/
 body{
+  
+   overflow: scroll;
    background: var(--black-color); 
 }
 .wrapper{
+
+   background: var(--black-color); 
    width: 1280px;
    margin: 0 auto;
 }
@@ -75,6 +79,9 @@ body{
     display: flex;
     justify-content: flex-end;
     margin: 0 0 16px;
+    top:0;
+    right: auto;
+    z-index: 8;
 }
 .logo{
     font-family: 'Raleway', sans-serif;
@@ -176,17 +183,17 @@ body{
    top: -0px;
 }
 .menu-expanded {
-   transition: all .4s linear;
-   position: relative;
-   display: flex;
+    transition: all .4s linear;
+    position: relative;
+    display: flex;
     align-items: flex-start;
     justify-content: space-between;
     flex-direction: column;
     flex: 0 0 640px;
     min-height: 740px;
     padding: 80px;
-   z-index: 1;
-   background: var(--dark-green);
+    z-index: 1;
+    background: var(--dark-green);
 }
 .menu-expanded .bar{
     left: -73px;
@@ -232,6 +239,11 @@ body{
 .menu-expanded .phone, .menu-expanded .italic,
 .menu-expanded .mail{
     display: block; 
+}
+.fixed{
+    position: sticky;
+    top:90px;
+
 }
 .container{ 
     display: flex;
@@ -327,10 +339,14 @@ body{
 .box2 .title{
     margin: 0 0 56px;
 }
+main{
+    overflow: auto;
+}
 .section{
     padding: 80px;
     margin: 80px 0;
 }
+
 .experience .text{
 margin: 0 0 48px;
 }
@@ -380,6 +396,9 @@ margin: 0 0 48px;
 }
 .arrow {
     margin: 0 0 4px;
+}
+.comp-img img{
+    opacity: 0;
 }
 .group{
     width: 600px;
