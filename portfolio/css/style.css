@@ -60,7 +60,7 @@ table {
 }
 /* general style*/
 body{
-  
+ 
    overflow: scroll;
    background: var(--black-color); 
 }
@@ -240,11 +240,6 @@ body{
 .menu-expanded .mail{
     display: block; 
 }
-.fixed{
-    position: sticky;
-    top:90px;
-
-}
 .container{ 
     display: flex;
     min-height: 740px;
@@ -339,14 +334,41 @@ body{
 .box2 .title{
     margin: 0 0 56px;
 }
-main{
-    overflow: auto;
+.main{
+    margin: 80px 0;
+}
+.top-fix{
+    position: sticky;
+    background: var(--dark-green);
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    top:0;
+    right: auto;
+    opacity: 0;
+}
+.top-fix .nav{
+    margin: 0 40px;
+    display: flex;
+    align-items: baseline;
+}
+.top-fix .nav-item {
+    text-decoration: none;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--black-color);
+    margin: 16px 20px;
+    display: block;
+}
+.top-fix .phone,.top-fix .mail{
+    margin: 0 40px;
 }
 .section{
     padding: 80px;
     margin: 80px 0;
 }
-
 .experience .text{
 margin: 0 0 48px;
 }
@@ -453,7 +475,6 @@ margin: 0 0 48px;
     background: var(--dark-green);
     transition: width 1s linear;
 }
-
 
 
 
